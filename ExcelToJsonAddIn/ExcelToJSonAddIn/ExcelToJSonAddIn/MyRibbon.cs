@@ -111,7 +111,9 @@ namespace ExcelToJSonAddIn
         private void ShowMessage(int totalRows, int totalColumns)
         {
             MessageBox.Show(  
-                  "  Save Successful!\n\n"
+                "\n"
+                + "  Excel to XML\n"
+                + "  Save Successful!\n\n"
                 + "  Total: " + totalRows + " Rows"
                 + ", " + totalColumns + " Columns");
         }
@@ -141,7 +143,8 @@ namespace ExcelToJSonAddIn
         private void ShowAbout()
         {
             MessageBox.Show(
-                "\n"
+                  "\n"
+                + "  Excel to XML\n"
                 + "  Created by OneLei.\n"
                 + "  Email: ahleiwolong@163.com \n"
                 + "  Copyright (c) 2015 Year. All rights reserved.\n\n");
