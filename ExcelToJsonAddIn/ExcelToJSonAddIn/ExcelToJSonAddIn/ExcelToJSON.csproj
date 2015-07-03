@@ -34,15 +34,15 @@
     <PublishUrl>C:\Users\MI-32\Desktop\ExcelToJSON\</PublishUrl>
     <InstallUrl />
     <TargetCulture>en</TargetCulture>
-    <ApplicationVersion>1.0.0.10</ApplicationVersion>
+    <ApplicationVersion>1.0.0.11</ApplicationVersion>
     <AutoIncrementApplicationRevision>true</AutoIncrementApplicationRevision>
     <UpdateEnabled>true</UpdateEnabled>
     <UpdateInterval>1</UpdateInterval>
     <UpdateIntervalUnits>days</UpdateIntervalUnits>
-    <ProductName>ExcelToJSonAddIn</ProductName>
-    <PublisherName>Jack Stone</PublisherName>
+    <ProductName>ExcelToJSON</ProductName>
+    <PublisherName>onelei</PublisherName>
     <SupportUrl />
-    <FriendlyName>ExcelToJSonAddIn</FriendlyName>
+    <FriendlyName>ExcelToJSON</FriendlyName>
     <OfficeApplicationDescription />
     <LoadBehavior>3</LoadBehavior>
   </PropertyGroup>
