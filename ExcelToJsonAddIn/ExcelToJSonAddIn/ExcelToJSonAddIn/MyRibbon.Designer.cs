@@ -36,7 +36,13 @@
         {
             this.tab1 = this.Factory.CreateRibbonTab();
             this.group1 = this.Factory.CreateRibbonGroup();
-            this.btnToJSon = this.Factory.CreateRibbonButton();
+            this.Key_R = this.Factory.CreateRibbonEditBox();
+            this.Key_C = this.Factory.CreateRibbonEditBox();
+            this.Button_XML = this.Factory.CreateRibbonButton();
+            this.Value_R = this.Factory.CreateRibbonEditBox();
+            this.Value_C = this.Factory.CreateRibbonEditBox();
+            this.button_JSon = this.Factory.CreateRibbonButton();
+            this.button_About = this.Factory.CreateRibbonButton();
             this.tab1.SuspendLayout();
             this.group1.SuspendLayout();
             // 
@@ -49,15 +55,57 @@
             // 
             // group1
             // 
-            this.group1.Items.Add(this.btnToJSon);
+            this.group1.Items.Add(this.Key_R);
+            this.group1.Items.Add(this.Key_C);
+            this.group1.Items.Add(this.button_JSon);
+            this.group1.Items.Add(this.Value_R);
+            this.group1.Items.Add(this.Value_C);
+            this.group1.Items.Add(this.button_About);
+            this.group1.Items.Add(this.Button_XML);
             this.group1.Label = "group1";
             this.group1.Name = "group1";
             // 
-            // btnToJSon
+            // Key_R
             // 
-            this.btnToJSon.Label = "ExcelToJSON";
-            this.btnToJSon.Name = "btnToJSon";
-            this.btnToJSon.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.btnToJSon_Click);
+            this.Key_R.Label = "Key(行R)";
+            this.Key_R.Name = "Key_R";
+            this.Key_R.Text = null;
+            // 
+            // Key_C
+            // 
+            this.Key_C.Label = "Key(列C)";
+            this.Key_C.Name = "Key_C";
+            this.Key_C.Text = null;
+            // 
+            // Button_XML
+            // 
+            this.Button_XML.Label = "";
+            this.Button_XML.Name = "Button_XML";
+            // 
+            // Value_R
+            // 
+            this.Value_R.Label = "Value(行R)";
+            this.Value_R.Name = "Value_R";
+            this.Value_R.Text = null;
+            // 
+            // Value_C
+            // 
+            this.Value_C.Label = "Value(列C)";
+            this.Value_C.Name = "Value_C";
+            this.Value_C.Text = null;
+            // 
+            // button_JSon
+            // 
+            this.button_JSon.Label = "ExcelToJSON";
+            this.button_JSon.Name = "button_JSon";
+            this.button_JSon.ShowImage = true;
+            this.button_JSon.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.button_JSon_Click);
+            // 
+            // button_About
+            // 
+            this.button_About.Label = "About";
+            this.button_About.Name = "button_About";
+            this.button_About.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.button_About_Click);
             // 
             // MyRibbon
             // 
@@ -76,7 +124,13 @@
 
         internal Microsoft.Office.Tools.Ribbon.RibbonTab tab1;
         internal Microsoft.Office.Tools.Ribbon.RibbonGroup group1;
-        internal Microsoft.Office.Tools.Ribbon.RibbonButton btnToJSon;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton button_JSon;
+        internal Microsoft.Office.Tools.Ribbon.RibbonEditBox Key_R;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton button_About;
+        internal Microsoft.Office.Tools.Ribbon.RibbonEditBox Key_C;
+        internal Microsoft.Office.Tools.Ribbon.RibbonEditBox Value_R;
+        internal Microsoft.Office.Tools.Ribbon.RibbonEditBox Value_C;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton Button_XML;
     }
 
     partial class ThisRibbonCollection
