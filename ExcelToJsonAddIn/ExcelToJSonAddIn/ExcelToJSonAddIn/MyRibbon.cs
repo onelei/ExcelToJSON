@@ -112,7 +112,7 @@ namespace ExcelToJSonAddIn
         {
             MessageBox.Show(  
                 "\n"
-                + "  Excel to XML\n"
+                + "  Excel to JSON\n"
                 + "  Save Successful!\n\n"
                 + "  Total: " + totalRows + " Rows"
                 + ", " + totalColumns + " Columns");
@@ -144,7 +144,7 @@ namespace ExcelToJSonAddIn
         {
             MessageBox.Show(
                   "\n"
-                + "  Excel to XML\n"
+                + "  Excel to JSON\n"
                 + "  Created by OneLei.\n"
                 + "  Email: ahleiwolong@163.com \n"
                 + "  Copyright (c) 2015 Year. All rights reserved.\n\n");

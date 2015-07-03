@@ -8,3 +8,4 @@ C:\Users\MI-32\Documents\GitHub\ExcelToJSON-\ExcelToJSON\ExcelToJsonAddIn\ExcelT
 C:\Users\MI-32\Documents\GitHub\ExcelToJSON-\ExcelToJSON\ExcelToJsonAddIn\ExcelToJSonAddIn\ExcelToJSonAddIn\bin\Release\ExcelToJSonAddIn.vsto
 C:\Users\MI-32\Documents\GitHub\ExcelToJSON-\ExcelToJSON\ExcelToJsonAddIn\ExcelToJSonAddIn\ExcelToJSonAddIn\bin\Release\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
 C:\Users\MI-32\Documents\GitHub\ExcelToJSON-\ExcelToJSON\ExcelToJsonAddIn\ExcelToJSonAddIn\ExcelToJSonAddIn\obj\Release\ExcelToJSonAddIn.pdb
+C:\Users\MI-32\Documents\GitHub\ExcelToJSON-\ExcelToJSON\ExcelToJsonAddIn\ExcelToJSonAddIn\ExcelToJSonAddIn\obj\Release\ExcelToJSON.csprojResolveAssemblyReference.cache
