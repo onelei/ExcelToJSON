@@ -6,7 +6,7 @@ using Microsoft.Office.Tools.Ribbon;
 using Microsoft.Office.Interop.Excel;
 using System.Windows.Forms;
 using System.IO;
-using System.Drawing;
+using System.Diagnostics;
 namespace ExcelToJSonAddIn
 {
     public partial class MyRibbon
@@ -37,7 +37,8 @@ namespace ExcelToJSonAddIn
         private void ExcelToJSON()
         {
             CheckInputValue();
-
+            Stopwatch MyCodeExeTime = new Stopwatch();
+            MyCodeExeTime.Start();
             string text = "";
             int totalRows = ThisAddIn.Instance.workBook.ActiveSheet.UsedRange.Rows.Count;
             int totalColumns = ThisAddIn.Instance.workBook.ActiveSheet.UsedRange.Columns.Count;
@@ -76,7 +77,9 @@ namespace ExcelToJSonAddIn
             fileName = fileName.Replace(".xlsx", "");
             fileName += ".json";      
             WriteToFile(path, fileName, text);
-            ShowMessage(totalRows, totalColumns);
+            MyCodeExeTime.Stop();
+            string myTime = MyCodeExeTime.ElapsedMilliseconds.ToString();
+            ShowMessage(totalRows, totalColumns,myTime);
         }
  
         /*
@@ -108,12 +111,13 @@ namespace ExcelToJSonAddIn
         /*
          * Show message.
          */
-        private void ShowMessage(int totalRows, int totalColumns)
+        private void ShowMessage(int totalRows, int totalColumns,string _ExeTime)
         {
             MessageBox.Show(  
                 "\n"
                 + "  Excel to JSON\n"
                 + "  Save Successful!\n\n"
+                + "  Time:  " + _ExeTime + "毫秒.\n"
                 + "  Total: " + totalRows + " Rows"
                 + ", " + totalColumns + " Columns");
         }
