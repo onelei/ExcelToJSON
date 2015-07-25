@@ -42,27 +42,37 @@ namespace ExcelToJSonAddIn
             string text = "";
             int totalRows = ThisAddIn.Instance.workBook.ActiveSheet.UsedRange.Rows.Count;
             int totalColumns = ThisAddIn.Instance.workBook.ActiveSheet.UsedRange.Columns.Count;
+            totalRows=FixtotalRows( totalRows);
+            totalColumns = FixtotalColumns(totalColumns);
+
             text += "[{";
             for (int i = ValueRow; i != totalRows + 1; ++i)
             {
                 for (int j = ValueColumn; j != totalColumns + 1; ++j)
                 {               
+                       // key =>    "ID:"   ;
                         text += "\"" + ThisAddIn.Instance.workBook.ActiveSheet.Cells(KeyRow, j).Value + "\":";
+                        string type = ""+ThisAddIn.Instance.workBook.ActiveSheet.Cells(KeyRow+1, j).Value ;
+                        bool isIntValue  =  JugeIsIntType( type);
                         // In the last row and last column, modify text style;
                         if (i == totalRows && j == totalColumns)
                         {
-                            text += "\"" + ThisAddIn.Instance.workBook.ActiveSheet.Cells(i, j).Value + "\"";
+                            // value =>  "value"  ;
+                            string value = ""+ThisAddIn.Instance.workBook.ActiveSheet.Cells(i, j).Value ;
+                            text += FixValueAdd(value, type);
                         }
                         else
                         {
                             // Every Row Start, write "},";
                             if (j == totalColumns)
                             {
-                                text += "\"" + ThisAddIn.Instance.workBook.ActiveSheet.Cells(i, j).Value + "\"},{";
+                                string value = "" + ThisAddIn.Instance.workBook.ActiveSheet.Cells(i, j).Value;
+                                text += FixValueAdd(value,type) +"},{";
                             }
                             else
                             {
-                                text += "\"" + ThisAddIn.Instance.workBook.ActiveSheet.Cells(i, j).Value + "\",";
+                                string value = "" + ThisAddIn.Instance.workBook.ActiveSheet.Cells(i, j).Value;
+                                text +=  FixValueAdd(value,type) +",";
                             }
                         }
                     
@@ -81,14 +91,13 @@ namespace ExcelToJSonAddIn
             string myTime = MyCodeExeTime.ElapsedMilliseconds.ToString();
             ShowMessage(totalRows, totalColumns,myTime);
         }
- 
-        /*
-         * Write to file
-         * @param path
-         * @param name
-         * @param text
-         * return
-         */
+
+        /// <summary>
+        /// write file;
+        /// </summary>
+        /// <param name="path"></param>
+        /// <param name="name"></param>
+        /// <param name="text"></param>
         public void WriteToFile(string path, string name, string text)
         {
             lock (this)
@@ -159,6 +168,9 @@ namespace ExcelToJSonAddIn
             ShowAbout();
         }
 
+        /// <summary>
+        /// check the input value , make sure value is integer.
+        /// </summary>
         void CheckInputValue()
         {
             // Get the key;
@@ -181,5 +193,61 @@ namespace ExcelToJSonAddIn
                 ValueColumn = System.Int32.Parse(Value_C.Text);
             }
         }
+
+        private int FixtotalRows(int totalRows)
+        {
+            for (int i = 1; i < totalRows;i++ )
+            {
+               string cellValue = ""+ThisAddIn.Instance.workBook.ActiveSheet.Cells(i, 1).Value;
+                if (string.IsNullOrEmpty(cellValue))
+                {
+                    // 当前的为空,则totalRow到此为止,修复totalRow;
+                    return i-1;
+                }
+            }
+            return totalRows;
+        }
+
+        private int FixtotalColumns(int totalColumns)
+        {
+            for (int i = 1; i < totalColumns; i++)
+            {
+                string cellValue = ""+ThisAddIn.Instance.workBook.ActiveSheet.Cells(1, i).Value;
+                if (string.IsNullOrEmpty(cellValue))
+                {
+                    // 当前的为空,则totalRow到此为止,修复totalRow;
+                    return i-1;
+                }
+            }
+            return totalColumns;
+        }
+
+        bool JugeIsStringType(string type)
+        {
+            if(type=="string"||type=="String")
+            {
+                return true;
+            }
+            return false;
+        }
+
+        bool JugeIsIntType(string type)
+        {
+            if(type=="int"||type=="Int")
+            {
+                return true;
+            }
+            return false;
+        }
+
+        string FixValueAdd(string value,string type)
+        {
+            if(JugeIsIntType(type))
+            {
+                return value;
+            }
+            return "\"" + value + "\"";
+        }
+
     }
 }

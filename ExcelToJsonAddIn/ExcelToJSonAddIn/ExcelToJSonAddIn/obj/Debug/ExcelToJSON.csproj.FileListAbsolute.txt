@@ -1,0 +1,10 @@
+C:\Users\JackStone\Desktop\oneleiGit\ExcelToJSON\ExcelToJSON\ExcelToJsonAddIn\ExcelToJSonAddIn\ExcelToJSonAddIn\bin\Debug\ExcelToJSonAddIn.dll
+C:\Users\JackStone\Desktop\oneleiGit\ExcelToJSON\ExcelToJSON\ExcelToJsonAddIn\ExcelToJSonAddIn\ExcelToJSonAddIn\bin\Debug\ExcelToJSonAddIn.pdb
+C:\Users\JackStone\Desktop\oneleiGit\ExcelToJSON\ExcelToJSON\ExcelToJsonAddIn\ExcelToJSonAddIn\ExcelToJSonAddIn\bin\Debug\ExcelToJSonAddIn.dll.manifest
+C:\Users\JackStone\Desktop\oneleiGit\ExcelToJSON\ExcelToJSON\ExcelToJsonAddIn\ExcelToJSonAddIn\ExcelToJSonAddIn\bin\Debug\ExcelToJSonAddIn.vsto
+C:\Users\JackStone\Desktop\oneleiGit\ExcelToJSON\ExcelToJSON\ExcelToJsonAddIn\ExcelToJSonAddIn\ExcelToJSonAddIn\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+C:\Users\JackStone\Desktop\oneleiGit\ExcelToJSON\ExcelToJSON\ExcelToJsonAddIn\ExcelToJSonAddIn\ExcelToJSonAddIn\obj\Debug\ExcelToJSonAddIn.MyRibbon.resources
+C:\Users\JackStone\Desktop\oneleiGit\ExcelToJSON\ExcelToJSON\ExcelToJsonAddIn\ExcelToJSonAddIn\ExcelToJSonAddIn\obj\Debug\ExcelToJSonAddIn.Properties.Resources.resources
+C:\Users\JackStone\Desktop\oneleiGit\ExcelToJSON\ExcelToJSON\ExcelToJsonAddIn\ExcelToJSonAddIn\ExcelToJSonAddIn\obj\Debug\ExcelToJSON.csproj.GenerateResource.Cache
+C:\Users\JackStone\Desktop\oneleiGit\ExcelToJSON\ExcelToJSON\ExcelToJsonAddIn\ExcelToJSonAddIn\ExcelToJSonAddIn\obj\Debug\ExcelToJSonAddIn.dll
+C:\Users\JackStone\Desktop\oneleiGit\ExcelToJSON\ExcelToJSON\ExcelToJsonAddIn\ExcelToJSonAddIn\ExcelToJSonAddIn\obj\Debug\ExcelToJSonAddIn.pdb
