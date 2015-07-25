@@ -9,4 +9,4 @@ Email: ahleiwolong@163.com
 ![](https://github.com/onelei/ExcelToJSON/blob/master/ImgCache/testExcel.png)
 
 ## The export json style is like this:
-![](https://github.com/onelei/ExcelToJSON/blob/master/ImageCache/testJson.png)
+![](https://github.com/onelei/ExcelToJSON/blob/master/ImgCache/testJson.png)
