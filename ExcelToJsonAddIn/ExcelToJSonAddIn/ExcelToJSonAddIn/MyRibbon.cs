@@ -242,7 +242,7 @@ namespace ExcelToJSonAddIn
 
         string FixValueAdd(string value,string type)
         {
-            if(JugeIsIntType(type))
+            if (!JugeIsStringType(type))
             {
                 return value;
             }

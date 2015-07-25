@@ -14,7 +14,6 @@ C:\Users\JackStone\Desktop\oneleiGit\ExcelToJSON\ExcelToJSON\ExcelToJsonAddIn\Ex
 C:\Users\JackStone\Desktop\oneleiGit\ExcelToJSON\ExcelToJSON\ExcelToJsonAddIn\ExcelToJSonAddIn\ExcelToJSonAddIn\bin\Release\ExcelToJSonAddIn.dll.manifest
 C:\Users\JackStone\Desktop\oneleiGit\ExcelToJSON\ExcelToJSON\ExcelToJsonAddIn\ExcelToJSonAddIn\ExcelToJSonAddIn\bin\Release\ExcelToJSonAddIn.vsto
 C:\Users\JackStone\Desktop\oneleiGit\ExcelToJSON\ExcelToJSON\ExcelToJsonAddIn\ExcelToJSonAddIn\ExcelToJSonAddIn\bin\Release\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
-C:\Users\JackStone\Desktop\oneleiGit\ExcelToJSON\ExcelToJSON\ExcelToJsonAddIn\ExcelToJSonAddIn\ExcelToJSonAddIn\obj\Release\ExcelToJSON.csprojResolveAssemblyReference.cache
 C:\Users\JackStone\Desktop\oneleiGit\ExcelToJSON\ExcelToJSON\ExcelToJsonAddIn\ExcelToJSonAddIn\ExcelToJSonAddIn\obj\Release\ExcelToJSonAddIn.MyRibbon.resources
 C:\Users\JackStone\Desktop\oneleiGit\ExcelToJSON\ExcelToJSON\ExcelToJsonAddIn\ExcelToJSonAddIn\ExcelToJSonAddIn\obj\Release\ExcelToJSonAddIn.Properties.Resources.resources
 C:\Users\JackStone\Desktop\oneleiGit\ExcelToJSON\ExcelToJSON\ExcelToJsonAddIn\ExcelToJSonAddIn\ExcelToJSonAddIn\obj\Release\ExcelToJSON.csproj.GenerateResource.Cache
