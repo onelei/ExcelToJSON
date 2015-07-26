@@ -19,3 +19,4 @@ C:\Users\JackStone\Desktop\oneleiGit\ExcelToJSON\ExcelToJSON\ExcelToJsonAddIn\Ex
 C:\Users\JackStone\Desktop\oneleiGit\ExcelToJSON\ExcelToJSON\ExcelToJsonAddIn\ExcelToJSonAddIn\ExcelToJSonAddIn\obj\Release\ExcelToJSON.csproj.GenerateResource.Cache
 C:\Users\JackStone\Desktop\oneleiGit\ExcelToJSON\ExcelToJSON\ExcelToJsonAddIn\ExcelToJSonAddIn\ExcelToJSonAddIn\obj\Release\ExcelToJSonAddIn.dll
 C:\Users\JackStone\Desktop\oneleiGit\ExcelToJSON\ExcelToJSON\ExcelToJsonAddIn\ExcelToJSonAddIn\ExcelToJSonAddIn\obj\Release\ExcelToJSonAddIn.pdb
+C:\Users\JackStone\Desktop\oneleiGit\ExcelToJSON\ExcelToJSON\ExcelToJsonAddIn\ExcelToJSonAddIn\ExcelToJSonAddIn\obj\Release\ExcelToJSON.csprojResolveAssemblyReference.cache
